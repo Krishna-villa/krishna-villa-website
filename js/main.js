@@ -154,7 +154,7 @@
         if (val) lines.push(labels[key] + ": " + val);
       });
       var text = encodeURIComponent("New booking enquiry — Krishna Villa%0A" + lines.join("%0A"));
-      var phone = form.getAttribute("data-whatsapp") || "919876543210";
+      var phone = form.getAttribute("data-whatsapp") || "918890952523";
       window.open("https://wa.me/" + phone + "?text=" + text, "_blank");
       var success = document.querySelector(".form-success");
       if (success) success.style.display = "block";
