@@ -279,7 +279,7 @@ section { padding: 84px 0; }
   display: flex; flex-direction: column;
 }
 .card:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
-.card .ph { aspect-ratio: 4/3; width: 100%; }
+.card .ph { aspect-ratio: 4/3; width: 100%; object-fit: cover; }
 .card-body { padding: 24px; flex: 1; display: flex; flex-direction: column; }
 .card-body h3 { font-family: var(--serif); font-size: 1.22rem; color: var(--wine); margin-bottom: 8px; }
 .card-body p { font-size: 0.92rem; color: var(--muted); margin-bottom: 14px; }
@@ -341,7 +341,7 @@ section { padding: 84px 0; }
    ========================================================================== */
 .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .gallery-grid .g-item { position: relative; border-radius: 12px; overflow: hidden; cursor: pointer; box-shadow: var(--shadow-sm); }
-.gallery-grid .g-item img, .gallery-grid .g-item .ph { aspect-ratio: 1/1; width: 100%; transition: transform 0.4s ease; }
+.gallery-grid .g-item img, .gallery-grid .g-item .ph { aspect-ratio: 1/1; width: 100%; object-fit: cover; transition: transform 0.4s ease; }
 .gallery-grid .g-item:hover img, .gallery-grid .g-item:hover .ph { transform: scale(1.06); }
 .gallery-grid .g-item .g-cap {
   position: absolute; left: 0; right: 0; bottom: 0; padding: 30px 16px 12px;
