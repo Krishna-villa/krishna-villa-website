@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky8" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2e1538"/>
+      <stop offset="0.5" stop-color="#8e2f52"/>
+      <stop offset="0.8" stop-color="#e07a4e"/>
+      <stop offset="1" stop-color="#f6c672"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#sky8)"/>
+  <circle cx="480" cy="360" r="78" fill="#ffd98a" opacity="0.95"/>
+  <g fill="#fff" opacity="0.7">
+    <circle cx="160" cy="130" r="2"/><circle cx="260" cy="100" r="1.6"/><circle cx="380" cy="150" r="2"/>
+    <circle cx="560" cy="110" r="1.6"/><circle cx="680" cy="140" r="2"/><circle cx="500" cy="90" r="1.8"/>
+  </g>
+  <path d="M0 480 Q150 430 300 470 Q450 510 600 465 Q700 440 800 470 L800 600 L0 600 Z" fill="#2e1538"/>
+  <path d="M0 520 Q200 480 400 515 Q600 545 800 505 L800 600 L0 600 Z" fill="#1f0e26"/>
+  <g fill="#1f0e26">
+    <rect x="80" y="380" width="90" height="80" rx="4"/>
+    <rect x="620" y="360" width="90" height="100" rx="4"/>
+  </g>
+  <g fill="#ffd98a" opacity="0.6">
+    <rect x="100" y="400" width="16" height="40"/>
+    <rect x="640" y="380" width="16" height="60"/>
+  </g>
+  <text x="400" y="580" font-family="Georgia, serif" font-size="14" fill="#fdf6ec" text-anchor="middle" opacity="0.85">Sunset view from the villa — replace with real photo</text>
+</svg>

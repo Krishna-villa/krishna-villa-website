@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="sky3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe9c4"/>
+      <stop offset="1" stop-color="#f6d79a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#sky3)"/>
+  <circle cx="640" cy="120" r="46" fill="#f0b04c"/>
+  <g stroke="#e0e0c8" stroke-width="3" fill="none" opacity="0.7">
+    <path d="M0 470 Q200 430 400 470 T800 470 L800 600 L0 600 Z" fill="#b9d18a"/>
+  </g>
+  <g stroke="#e0e0c8" stroke-width="3" fill="none" opacity="0.7">
+    <path d="M0 480 Q200 440 400 480 T800 480 L800 600 L0 600 Z" fill="#a3c268"/>
+  </g>
+  <g fill="#4a2231" opacity="0.45">
+    <circle cx="120" cy="120" r="2"/><circle cx="220" cy="90" r="1.6"/><circle cx="320" cy="140" r="2"/>
+    <circle cx="440" cy="100" r="1.6"/><circle cx="540" cy="130" r="2"/>
+  </g>
+  <rect x="80" y="300" width="640" height="130" fill="#f7ead2" stroke="#7a1f2b" stroke-width="5"/>
+  <g stroke="#7a1f2b" stroke-width="5" fill="none">
+    <path d="M120 300 Q180 210 240 300"/>
+    <path d="M560 300 Q620 210 680 300"/>
+  </g>
+  <rect x="0" y="428" width="800" height="12" fill="#7a1f2b"/>
+  <g fill="#7a1f2b">
+    <rect x="120" y="470" width="30" height="130"/>
+    <rect x="200" y="470" width="30" height="130"/>
+    <rect x="340" y="470" width="30" height="130"/>
+    <rect x="420" y="470" width="30" height="130"/>
+    <rect x="560" y="470" width="30" height="130"/>
+    <rect x="640" y="470" width="30" height="130"/>
+  </g>
+  <g fill="#e3c567">
+    <path d="M110 440 l30 26 l-30 26 z"/>
+    <path d="M330 440 l30 26 l-30 26 z"/>
+    <path d="M550 440 l30 26 l-30 26 z"/>
+  </g>
+  <g fill="#fdf6ec">
+    <circle cx="150" cy="560" r="30"/>
+    <circle cx="380" cy="555" r="34"/>
+    <circle cx="600" cy="560" r="30"/>
+  </g>
+  <text x="400" y="590" font-family="Georgia, serif" font-size="14" fill="#7a1f2b" text-anchor="middle" opacity="0.9">Courtyard garden — replace with real photo</text>
+</svg>

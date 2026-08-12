@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="lake4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b6f8e"/>
+      <stop offset="1" stop-color="#123f55"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="#123f55"/>
+  <rect width="800" height="280" fill="#2b6f8e"/>
+  <g fill="#123f55" opacity="0.5">
+    <path d="M0 220 L300 60 L600 250 L900 90 L1200 260 L1200 300 L0 300 Z" transform="translate(-200,0)"/>
+  </g>
+  <circle cx="620" cy="90" r="40" fill="#ffd98a" opacity="0.9"/>
+  <g stroke="#f3d09a" stroke-width="2" fill="none" opacity="0.5">
+    <ellipse cx="400" cy="420" rx="90" ry="16"/>
+    <ellipse cx="600" cy="460" rx="70" ry="13" opacity="0.7"/>
+  </g>
+  <g transform="translate(520,300)">
+    <path d="M0 80 L12 24 L40 0 L50 16 L20 80 Z" fill="#fdf6ec"/>
+    <path d="M12 24 L170 52 L50 16 Z" fill="#e3c567"/>
+    <rect x="0" y="78" width="58" height="8" fill="#3a1a28"/>
+    <circle cx="34" cy="96" r="8" fill="#3a1a28"/>
+  </g>
+  <g fill="#123f55">
+    <path d="M160 140 Q176 88 192 140 Q177 130 163 140 Z" transform="translate(60,20)"/>
+    <path d="M160 140 Q176 88 192 140 Q177 130 163 140 Z" transform="translate(90,8)"/>
+    <path d="M160 140 Q176 88 192 140 Q177 130 163 140 Z" transform="translate(78,0)"/>
+  </g>
+  <text x="400" y="580" font-family="Georgia, serif" font-size="14" fill="#fdf6ec" text-anchor="middle" opacity="0.85">Lake Pichola boat ride — replace with real photo</text>
+</svg>

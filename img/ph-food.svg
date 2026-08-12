@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="wall5" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f3e3c8"/>
+      <stop offset="1" stop-color="#e2cda6"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#wall5)"/>
+  <rect x="40" y="40" width="720" height="440" rx="14" fill="#fdf6ec" stroke="#e3c567" stroke-width="6"/>
+  <rect x="80" y="120" width="640" height="180" rx="8" fill="#7a1f2b" opacity="0.92"/>
+  <circle cx="400" cy="200" r="90" fill="#fdf6ec"/>
+  <circle cx="400" cy="200" r="90" fill="none" stroke="#c9a227" stroke-width="10"/>
+  <circle cx="400" cy="200" r="40" fill="#e3c567"/>
+  <g fill="#7a1f2b">
+    <rect x="150" y="340" width="220" height="90" rx="10" fill="#e3c567"/>
+    <rect x="430" y="340" width="220" height="90" rx="10" fill="#e3c567"/>
+    <ellipse cx="210" cy="430" rx="30" ry="10" fill="#b3543f"/>
+    <ellipse cx="540" cy="430" rx="30" ry="10" fill="#b3543f"/>
+    <circle cx="210" cy="385" r="20" fill="#b3543f"/>
+    <circle cx="540" cy="385" r="20" fill="#b3543f"/>
+  </g>
+  <g stroke="#5c1620" stroke-width="6" fill="none" opacity="0.8">
+    <line x1="210" y1="300" x2="210" y2="340"/>
+    <line x1="540" y1="300" x2="540" y2="340"/>
+  </g>
+  <text x="400" y="580" font-family="Georgia, serif" font-size="14" fill="#7a1f2b" text-anchor="middle" opacity="0.9">Rajasthani home meals — replace with real photo</text>
+</svg>

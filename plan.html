@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Development Plan — Krishna Villa</title>
+<style>
+  :root {
+    --wine: #7a1f2b;
+    --wine-dark: #5c1620;
+    --gold: #c9a227;
+    --cream: #fdf6ec;
+    --sand: #f4e9d8;
+    --ink: #2e2a26;
+    --muted: #6b6257;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.6;
+  }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 32px 24px 80px; }
+
+  header.hero {
+    background: linear-gradient(160deg, var(--wine-dark), var(--wine));
+    color: #fff;
+    border-radius: 16px;
+    padding: 48px 40px;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0,0,0,.18);
+  }
+  header.hero .kicker {
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    font-size: .78rem;
+    color: var(--gold);
+    margin-bottom: 10px;
+  }
+  header.hero h1 { font-size: 2.4rem; margin-bottom: 6px; }
+  header.hero p.sub { color: #f3d9a0; font-style: italic; }
+
+  h2.section {
+    margin: 44px 0 18px;
+    padding-left: 14px;
+    border-left: 5px solid var(--gold);
+    font-size: 1.35rem;
+    color: var(--wine-dark);
+  }
+  p.lead { color: var(--muted); margin-bottom: 14px; }
+
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+  .card {
+    background: #fff;
+    border: 1px solid #e6dcc9;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.05);
+  }
+  .card h3 { color: var(--wine); font-size: 1.05rem; margin-bottom: 8px; }
+  .card ul { list-style: none; }
+  .card li { padding-left: 18px; position: relative; margin-bottom: 6px; font-size: .95rem; }
+  .card li::before { content: "◆"; position: absolute; left: 0; color: var(--gold); font-size: .7rem; top: 5px; }
+
+  ol.steps { counter-reset: step; list-style: none; }
+  ol.steps > li {
+    counter-increment: step;
+    background: #fff;
+    border: 1px solid #e6dcc9;
+    border-radius: 12px;
+    padding: 20px 20px 20px 64px;
+    position: relative;
+    margin-bottom: 14px;
+  }
+  ol.steps > li::before {
+    content: counter(step);
+    position: absolute;
+    left: 20px; top: 18px;
+    width: 30px; height: 30px;
+    background: var(--wine);
+    color: #fff;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: .95rem;
+  }
+  ol.steps h3 { color: var(--wine); font-size: 1rem; margin-bottom: 6px; }
+  ol.steps p, ol.steps ul { font-size: .92rem; color: #4a443c; }
+  ol.steps ul { padding-left: 20px; }
+
+  table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,.05); }
+  th, td { padding: 12px 14px; text-align: left; border-bottom: 1px solid #efe6d5; font-size: .92rem; }
+  th { background: var(--wine); color: #fff; }
+  tr:last-child td { border-bottom: none; }
+  td.pct { color: var(--wine); font-weight: bold; }
+
+  .palette { display: flex; gap: 12px; flex-wrap: wrap; }
+  .swatch { flex: 1; min-width: 120px; border-radius: 10px; padding: 14px; color: #fff; text-align: center; }
+  .swatch span { display: block; font-size: .8rem; opacity: .9; }
+
+  .note {
+    background: #fff6e2;
+    border: 1px solid #ecd9a0;
+    border-left: 5px solid var(--gold);
+    border-radius: 8px;
+    padding: 14px 18px;
+    font-size: .9rem;
+    margin: 14px 0;
+  }
+
+  footer { text-align: center; color: var(--muted); font-size: .85rem; margin-top: 48px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div class="kicker">Development Plan · v1.0</div>
+    <h1>Krishna Villa</h1>
+    <p class="sub">Boutique Homestay · Udaipur, Rajasthan</p>
+  </header>
+
+  <h2 class="section">1. Goals of the Website</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Attract Bookings</h3>
+      <ul><li>Drive direct bookings, not just OTAs</li><li>WhatsApp / phone / enquiry-form lead capture</li></ul>
+    </div>
+    <div class="card">
+      <h3>Build Trust</h3>
+      <ul><li>Beautiful photos of rooms, courtyards &amp; lake views</li><li>Guest testimonials &amp; verified reviews</li></ul>
+    </div>
+    <div class="card">
+      <h3>Tell the Story</h3>
+      <ul><li>Boutique, heritage-feel homestay narrative</li><li>Host introduction — "family welcome" experience</li></ul>
+    </div>
+    <div class="card">
+      <h3>SEO &amp; Visibility</h3>
+      <ul><li>Rank for "homestay in Udaipur"</li><li>Google Business, maps, structured data</li></ul>
+    </div>
+  </div>
+
+  <h2 class="section">2. Pages &amp; Structure</h2>
+  <table>
+    <tr><th>Page</th><th>Purpose</th><th>Key Content</th></tr>
+    <tr><td><strong>Home</strong></td><td>First impression &amp; hero booking</td><td>Hero gallery, quick availability, USP strip, latest reviews</td></tr>
+    <tr><td><strong>Rooms &amp; Suites</strong></td><td>Show accommodation</td><td>2–3 room types, photos, size, amenities, tariff (per night)</td></tr>
+    <tr><td><strong>Experiences</strong></td><td>Local Udaipur experiences</td><td>Lake Pichola boat ride, heritage walks, food tours, sunset points</td></tr>
+    <tr><td><strong>Gallery</strong></td><td>Visual trust</td><td>Photo grid — rooms, courtyard, food, views, nearby attractions</td></tr>
+    <tr><td><strong>About / Host</strong></td><td>Story &amp; authenticity</td><td>Host story, property history, hospitality promise</td></tr>
+    <tr><td><strong>Guest Reviews</strong></td><td>Social proof</td><td>Testimonials, Google/TripAdvisor ratings, review links</td></tr>
+    <tr><td><strong>Location</strong></td><td>How to reach</td><td>Map embed, landmarks, transport from railway/airport</td></tr>
+    <tr><td><strong>Contact / Book</strong></td><td>Conversion</td><td>Booking enquiry form, WhatsApp button, phone, email, policies</td></tr>
+    <tr><td><strong>Footer (all pages)</strong></td><td>Navigation &amp; SEO</td><td>Quick links, contact, social, newsletter, copyright</td></tr>
+  </table>
+
+  <h2 class="section">3. Design Direction</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Style</h3>
+      <ul>
+        <li>Rajasthani heritage warmth — earthy, elegant</li>
+        <li>Serif display font + clean sans body</li>
+        <li>Full-width photo sections, generous whitespace</li>
+        <li>Sticky top bar: phone + WhatsApp always visible</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Color Palette</h3>
+      <div class="palette" style="margin-top:8px">
+        <div class="swatch" style="background:#7a1f2b"><span>Deep Maroon<br>#7a1f2b</span></div>
+        <div class="swatch" style="background:#c9a227"><span>Royal Gold<br>#c9a227</span></div>
+        <div class="swatch" style="background:#fdf6ec;color:#5c1620"><span>Cream<br>#fdf6ec</span></div>
+        <div class="swatch" style="background:#2e2a26"><span>Ink<br>#2e2a26</span></div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>Typography</h3>
+      <ul>
+        <li>Headings: <em>Playfair Display</em> (serif, heritage feel)</li>
+        <li>Body: <em>Inter</em> or <em>Poppins</em> (legible sans)</li>
+        <li>Size scale tuned for mobile-first</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 class="section">4. Development Phases</h2>
+  <ol class="steps">
+    <li>
+      <h3>Content &amp; Assets</h3>
+      <ul>
+        <li>Professional photo shoot (rooms, courtyard, food, views) — 25–40 images</li>
+        <li>Write copy: hero lines, room descriptions, host story, FAQs</li>
+        <li>Collect 6–8 testimonials + link to Google/TripAdvisor reviews</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Structure &amp; Layout (HTML + CSS)</h3>
+      <ul>
+        <li>Build shared header/footer and page templates</li>
+        <li>Home page sections: hero, USP strip, featured rooms, experiences, testimonials</li>
+        <li>Responsive grid for gallery and rooms</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Interactivity (light JS)</h3>
+      <ul>
+        <li>Image lightbox for gallery</li>
+        <li>Sticky header, smooth scroll, mobile hamburger menu</li>
+        <li>Simple booking enquiry form (submit → WhatsApp/email)</li>
+      </ul>
+    </li>
+    <li>
+      <h3>SEO &amp; Local Presence</h3>
+      <ul>
+        <li>Meta titles/descriptions per page, Open Graph tags</li>
+        <li>LocalBusiness / LodgingBusiness structured data (Schema.org)</li>
+        <li>Google Maps embed + link to Google Business profile</li>
+        <li>Mobile speed optimization (image compression, lazy loading)</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Launch &amp; Maintain</h3>
+      <ul>
+        <li>Deploy to hosting + connect domain</li>
+        <li>Verify with Google Search Console, submit sitemap</li>
+        <li>Update tariffs/availability seasonally, add new reviews/photos</li>
+      </ul>
+    </li>
+  </ol>
+
+  <h2 class="section">5. Booking Approach</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Recommended (Phase 1)</h3>
+      <ul>
+        <li>Enquiry form → instant WhatsApp message to host</li>
+        <li>Phone + email CTA on every page</li>
+        <li>Clear tariff table and seasonal offers</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Later (Phase 2)</h3>
+      <ul>
+        <li>Live availability calendar</li>
+        <li>Online payment / advance booking widget</li>
+        <li>Integrate with OTA links (Airbnb, Booking.com) for cross-sell</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 class="section">6. Deliverables &amp; Timeline (Estimate)</h2>
+  <table>
+    <tr><th>Deliverable</th><th>Scope</th><th>Time</th></tr>
+    <tr><td>Design mockup</td><td>Colors, fonts, home &amp; room page layout</td><td>2–3 days</td></tr>
+    <tr><td>Core pages</td><td>HTML/CSS for 8 pages + responsiveness</td><td>5–7 days</td></tr>
+    <tr><td>Interactivity</td><td>Lightbox, menu, booking form</td><td>2–3 days</td></tr>
+    <tr><td>SEO setup</td><td>Meta, schema, maps, speed</td><td>2 days</td></tr>
+    <tr><td>Testing &amp; launch</td><td>Device testing, deploy, domain</td><td>2–3 days</td></tr>
+  </table>
+
+  <div class="note">
+    <strong>Next step:</strong> Collect the photo shoot and finalized copy first — content quality makes or breaks a hospitality site. Everything else builds around those assets.
+  </div>
+
+  <footer>
+    Krishna Villa · Boutique Homestay · Udaipur, Rajasthan<br>
+    Development Plan v1.0
+  </footer>
+
+</div>
+</body>
+</html>

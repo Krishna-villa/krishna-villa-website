@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="w6" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f9efdc"/>
+      <stop offset="1" stop-color="#e8d7ba"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#w6)"/>
+  <g stroke="#7a1f2b" stroke-width="8" fill="none">
+    <path d="M120 140 Q190 70 260 140 L260 420 L120 420 Z"/>
+    <path d="M540 140 Q610 70 680 140 L680 420 L540 420 Z"/>
+    <rect x="300" y="80" width="200" height="300" rx="8"/>
+  </g>
+  <rect x="320" y="100" width="160" height="100" fill="url(#w6)"/>
+  <g transform="translate(380,430)">
+    <circle cx="0" cy="0" r="34" fill="#e3c567"/>
+    <circle cx="0" cy="-56" r="30" fill="#e3c567" opacity="0.8"/>
+    <circle cx="0" cy="-108" r="26" fill="#e3c567" opacity="0.6"/>
+  </g>
+  <rect x="100" y="480" width="600" height="18" rx="9" fill="#7a1f2b" opacity="0.6"/>
+  <text x="400" y="560" font-family="Georgia, serif" font-size="14" fill="#7a1f2b" text-anchor="middle" opacity="0.9">Your host family — replace with real photo</text>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a1a28"/>
+      <stop offset="0.55" stop-color="#b3543f"/>
+      <stop offset="0.8" stop-color="#e3a05a"/>
+      <stop offset="1" stop-color="#f3d09a"/>
+    </linearGradient>
+    <linearGradient id="lake" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d98a4e"/>
+      <stop offset="1" stop-color="#4a2231"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#sky)"/>
+  <circle cx="920" cy="270" r="70" fill="#ffd98a" opacity="0.92"/>
+  <g fill="#3a1a28" opacity="0.35">
+    <circle cx="180" cy="180" r="2.2"/><circle cx="260" cy="130" r="1.6"/><circle cx="340" cy="200" r="2"/>
+    <circle cx="500" cy="140" r="1.8"/><circle cx="620" cy="190" r="2.2"/><circle cx="740" cy="150" r="1.6"/>
+    <circle cx="880" cy="180" r="2"/><circle cx="1040" cy="140" r="1.8"/><circle cx="1120" cy="210" r="2"/>
+  </g>
+  <path d="M0 430 Q150 380 300 420 Q450 460 600 415 Q750 370 900 420 Q1050 465 1200 410 L1200 700 L0 700 Z" fill="#4a2231"/>
+  <path d="M0 470 Q180 430 340 465 Q520 500 680 460 Q860 425 1040 465 Q1120 485 1200 470 L1200 700 L0 700 Z" fill="#3a1a28"/>
+  <rect x="0" y="520" width="1200" height="180" fill="url(#lake)"/>
+  <path d="M0 520 Q200 505 400 520 Q600 535 800 518 Q1000 502 1200 520 L1200 700 L0 700 Z" fill="#4a2231" opacity="0.6"/>
+  <g opacity="0.5">
+    <ellipse cx="460" cy="600" rx="55" ry="12" fill="none" stroke="#f3d09a" stroke-width="2"/>
+    <ellipse cx="760" cy="630" rx="45" ry="10" fill="none" stroke="#f3d09a" stroke-width="2" opacity="0.7"/>
+  </g>
+  <g transform="translate(620,480)">
+    <path d="M0 60 L8 20 L30 0 L38 12 L16 60 Z" fill="#fdf6ec"/>
+    <path d="M8 20 L120 40 L38 12 Z" fill="#e3c567"/>
+    <rect x="0" y="58" width="42" height="6" fill="#3a1a28"/>
+    <circle cx="26" cy="72" r="6" fill="#3a1a28"/>
+  </g>
+  <g fill="#3a1a28">
+    <path d="M180 210 Q195 160 210 210 Q196 200 183 210 Z" transform="translate(40,30)"/>
+    <path d="M180 210 Q195 160 210 210 Q196 200 183 210 Z" transform="translate(70,20)"/>
+    <path d="M180 210 Q195 160 210 210 Q196 200 183 210 Z" transform="translate(55,10)"/>
+  </g>
+  <text x="600" y="690" font-family="Georgia, serif" font-size="16" fill="#fdf6ec" text-anchor="middle" opacity="0.85">Lake Pichola at dusk — replace with real photo</text>
+</svg>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact &amp; Booking — Krishna Villa, Udaipur</title>
+<meta name="description" content="Check availability and book direct at Krishna Villa boutique homestay, Udaipur. Instant WhatsApp replies, phone, email and a simple enquiry form.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ======= TOP BAR ======= -->
+<header class="topbar">
+  <div class="wrap">
+    <div class="tb-item">
+      <a href="tel:+919876543210"><svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1z"/></svg> +91 98765 43210</a>
+      <a class="wa" href="https://wa.me/919876543210" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.1 14.1c-.2.6-1.3 1.2-1.8 1.3-.5 0-1 .2-3.3-.7a11 11 0 0 1-4.6-4.1c-.3-.5-1.2-1.7-1.2-3.2s.8-2.3 1-2.6c.3-.3.6-.4.8-.4h.6c.2 0 .4-.1.7.5.2.6.8 2 .9 2.1.1.2.1.3 0 .5l-.4.6-.5.6c-.2.2-.4.4-.2.7.3.5 1.1 1.9 2.4 3 1.3 1 1.6 1.2 1.9 1.3.2.1.5.1.7-.1l1-1.1c.2-.3.5-.2.8-.1.3.1 2 1 2.3 1.2.4.1.6.2.7.3.1.1.1.6-.2 1.2z"/></svg> WhatsApp</a>
+    </div>
+    <div class="tb-item">
+      <a href="mailto:stay@krishnavillaudaipur.com"><svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5z"/></svg> stay@krishnavillaudaipur.com</a>
+    </div>
+  </div>
+</header>
+
+<!-- ======= NAV ======= -->
+<header class="header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">KV</span>
+      <span class="brand-name">Krishna Villa<small>Boutique Homestay · Udaipur</small></span>
+    </a>
+    <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="rooms.html">Rooms</a>
+      <a href="experiences.html">Experiences</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="location.html">Location</a>
+      <a href="contact.html" class="nav-cta">Book Now</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ======= PAGE HERO ======= -->
+<section class="page-hero" style="min-height:40vh;display:flex;align-items:center;justify-content:center">
+  <div class="hero-bg" style="background-image:url('img/ph-hero.svg')"></div>
+  <div class="hero-inner">
+    <h1>Check Availability</h1>
+    <p>Send an enquiry — we reply on WhatsApp within the hour.</p>
+    <div class="breadcrumb"><a href="index.html">Home</a> / Book</div>
+  </div>
+</section>
+
+<!-- ======= BOOKING ======= -->
+<section>
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="contact-card">
+          <h3>Enquire About a Stay</h3>
+          <form id="bookForm" data-whatsapp="919876543210" novalidate>
+            <div class="form-grid">
+              <div class="form-row">
+                <label for="name">Full Name *</label>
+                <input id="name" name="name" type="text" placeholder="e.g. Aisha Sharma" required>
+              </div>
+              <div class="form-row">
+                <label for="phone">Phone / WhatsApp *</label>
+                <input id="phone" name="phone" type="tel" placeholder="+91 …" required>
+              </div>
+            </div>
+            <div class="form-grid">
+              <div class="form-row">
+                <label for="checkin">Check-in *</label>
+                <input id="checkin" name="checkin" type="date" required>
+              </div>
+              <div class="form-row">
+                <label for="checkout">Check-out *</label>
+                <input id="checkout" name="checkout" type="date" required>
+              </div>
+            </div>
+            <div class="form-grid">
+              <div class="form-row">
+                <label for="room">Room Preference</label>
+                <select id="room" name="room">
+                  <option value="Any available room">Any available room</option>
+                  <option value="Lake View Room">Lake View Room</option>
+                  <option value="Heritage Suite">Heritage Suite</option>
+                  <option value="Courtyard Room">Courtyard Room</option>
+                </select>
+              </div>
+              <div class="form-row">
+                <label for="guests">Guests</label>
+                <select id="guests" name="guests">
+                  <option value="2 Adults">2 Adults</option>
+                  <option value="1 Adult">1 Adult</option>
+                  <option value="2 Adults + Child">2 Adults + Child</option>
+                  <option value="3 Adults">3 Adults</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com">
+            </div>
+            <div class="form-row">
+              <label for="message">Anything We Should Know?</label>
+              <textarea id="message" name="message" rows="4" placeholder="Anniversary surprise, food preferences, airport pickup…"></textarea>
+            </div>
+            <button class="btn btn-wine btn-lg" type="submit" style="width:100%">Send Enquiry via WhatsApp</button>
+            <p class="form-note">No advance needed to enquire. We'll confirm availability and hold your room.</p>
+          </form>
+          <div class="form-success" style="display:none;margin-top:18px;background:#e7f4e9;border:1px solid #9cc9a4;border-radius:10px;padding:16px;color:#2c5e33;font-size:0.9rem">
+            <strong>Thank you!</strong> Your enquiry is opening in WhatsApp. We'll reply within the hour.
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="contact-card" style="margin-bottom:24px">
+          <h3>Prefer to Chat Instantly?</h3>
+          <a class="whatsapp-big" href="https://wa.me/919876543210" target="_blank" rel="noopener">💬 WhatsApp Us Now</a>
+          <div class="contact-meta">
+            <p><strong>Phone:</strong> <a href="tel:+919876543210">+91 98765 43210</a></p>
+            <p><strong>Email:</strong> <a href="mailto:stay@krishnavillaudaipur.com">stay@krishnavillaudaipur.com</a></p>
+            <p><strong>Address:</strong> Old City, Near Lake Pichola Ghat, Udaipur, Rajasthan 313001</p>
+            <p class="gold">Replies: 9 AM – 10 PM, 7 days</p>
+          </div>
+        </div>
+        <div class="contact-card">
+          <h3>Why Book Direct?</h3>
+          <ul class="feature-list">
+            <li>Best rate — we price below OTAs</li>
+            <li>Free cancellation up to 48 hours</li>
+            <li>Room upgrades when available</li>
+            <li>Free airport pickup on 3+ nights</li>
+            <li>Direct line to the family, not a call centre</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= FAQ ======= -->
+<section class="sand-bg">
+  <div class="wrap wrap-narrow">
+    <div class="section-head reveal">
+      <span class="kicker">Questions</span>
+      <h2 class="section-title">Frequently Asked</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="reveal">
+      <div class="faq-item">
+        <div class="faq-q">Do I need to pay in advance to book? <span class="plus">+</span></div>
+        <div class="faq-a"><p>No. Enquiry is free and we hold your room for 24 hours. A small advance (one night) only confirms — and is refundable per our cancellation policy.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Is food included? <span class="plus">+</span></div>
+        <div class="faq-a"><p>Breakfast and evening chai are included. Lunch and dinner are available on request at a small charge — cooked fresh by the family.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Do you arrange pickups and tours? <span class="plus">+</span></div>
+        <div class="faq-a"><p>Yes. Airport/station pickup, boat rides, guided walks and day trips can all be arranged through us. Tell us your plans on WhatsApp.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Is the villa suitable for families with children? <span class="plus">+</span></div>
+        <div class="faq-a"><p>Absolutely — the courtyard and garden are safe for little ones, and the family is used to hosting kids. Cots are available on request.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Do you accept cards or UPI? <span class="plus">+</span></div>
+        <div class="faq-a"><p>UPI and cards are accepted on arrival. For the confirmation advance, we accept UPI or bank transfer.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======= FOOTER ======= -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="fbrand">
+          <span class="brand-mark">KV</span>
+          <span class="brand-name">Krishna Villa<small>Boutique Homestay · Udaipur</small></span>
+        </div>
+        <p>A heritage boutique homestay in the heart of old Udaipur, Rajasthan. Family-run, lovingly hosted, minutes from the lake.</p>
+        <div class="social">
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="TripAdvisor">T</a>
+          <a href="#" aria-label="Google">G</a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rooms.html">Rooms &amp; Rates</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About &amp; Hosts</a></li>
+          <li><a href="reviews.html">Guest Reviews</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Experiences</h4>
+        <ul>
+          <li><a href="experiences.html#lake">Lake Pichola Boat</a></li>
+          <li><a href="experiences.html#food">Home Dining</a></li>
+          <li><a href="experiences.html#walk">Heritage Walk</a></li>
+          <li><a href="experiences.html#sunset">Sunset Points</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>Old City, Near Lake Pichola,<br>Udaipur, Rajasthan 313001</li>
+          <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+          <li><a href="mailto:stay@krishnavillaudaipur.com">stay@krishnavillaudaipur.com</a></li>
+          <li><a href="contact.html">Book Direct →</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="year"></span> Krishna Villa, Udaipur. All rights reserved. · <a href="location.html">Find Us</a></div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
