@@ -208,7 +208,7 @@ section { padding: 84px 0; }
 .hero::after {
   content: "";
   position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(67,16,26,0.55), rgba(67,16,26,0.62));
+  /* background: linear-gradient(180deg, rgba(67,16,26,0.55), rgba(67,16,26,0.62)); */
 }
 .hero-inner { position: relative; z-index: 2; max-width: 800px; }
 .hero-kicker {
@@ -329,7 +329,9 @@ section { padding: 84px 0; }
    ========================================================================== */
 .exp-item { position: relative; border-radius: var(--radius); overflow: hidden; min-height: 420px; display: flex; align-items: flex-end; color: #fff; box-shadow: var(--shadow-sm); transition: transform 0.3s ease, box-shadow 0.3s ease; }
 .exp-item:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
-.exp-item::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(67,16,26,0.05), rgba(67,16,26,0.85)); }
+.exp-item::after { content: ""; position: absolute; inset: 0; 
+  /* background: linear-gradient(180deg, rgba(67,16,26,0.05), rgba(67,16,26,0.85)); */
+ }
 .exp-item .exp-body { position: relative; z-index: 2; padding: 30px; width: 100%; }
 .exp-item h3 { font-family: var(--serif); font-size: 1.35rem; margin-bottom: 6px; }
 .exp-item p { font-size: 0.88rem; color: #f0e2c8; margin-bottom: 12px; }
