@@ -20,6 +20,9 @@ Desktop.ini
 *.sublime-project
 *.sublime-workspace
 
+# Claude Code local data (also matches photos/.claude/)
+**/*/.claude/autoharness
+.claude/autoharness
 # Environment & secrets
 .env
 .env.*
