@@ -312,6 +312,16 @@ section { padding: 84px 0; }
 }
 .room-item:nth-child(even) .room-ph { order: 2; }
 .room-ph { min-height: 340px; }
+.room-gallery { display: flex; flex-direction: column; background: var(--sand); }
+.room-gallery .g-item { position: relative; overflow: hidden; cursor: pointer; }
+.room-gallery .g-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
+.room-gallery .g-item:hover img { transform: scale(1.04); }
+.room-gallery .room-main { flex: 1; min-height: 300px; }
+.room-gallery .room-thumbs { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 4px; padding-top: 4px; height: 92px; }
+.room-gallery .photo-count {
+  position: absolute; right: 12px; bottom: 12px; background: rgba(67,16,26,0.82); color: #fff;
+  font-size: 0.76rem; letter-spacing: 0.04em; padding: 6px 12px; border-radius: 30px; pointer-events: none;
+}
 .room-info { padding: 40px; display: flex; flex-direction: column; justify-content: center; }
 .room-info h2 { font-family: var(--serif); font-size: 1.7rem; color: var(--wine); margin: 8px 0 6px; }
 .room-info .room-sub { color: var(--muted); font-size: 0.9rem; margin-bottom: 16px; }
@@ -352,6 +362,13 @@ section { padding: 84px 0; }
   opacity: 0; transition: opacity 0.3s ease;
 }
 .gallery-grid .g-item:hover .g-cap { opacity: 1; }
+
+.gallery-filters { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 30px; }
+.gallery-filters button {
+  font: inherit; font-size: 0.85rem; padding: 8px 20px; border-radius: 30px; cursor: pointer;
+  background: transparent; color: var(--wine); border: 1.5px solid var(--wine); transition: all 0.2s ease;
+}
+.gallery-filters button:hover, .gallery-filters button.active { background: var(--wine); color: #fff; }
 
 /* Lightbox */
 .lightbox {
@@ -533,6 +550,8 @@ section { padding: 84px 0; }
   .footer-grid { grid-template-columns: 1fr; gap: 28px; }
   .room-info { padding: 28px; }
   .room-item .room-ph { min-height: 240px; }
+  .room-gallery .room-main { min-height: 240px; }
+  .room-gallery .room-thumbs { height: 64px; }
   .hero-actions .btn { width: 100%; }
   .usp-item { border-left: none; border-top: 1px solid rgba(255,255,255,0.14); }
   .usp-item:first-child { border-top: none; }

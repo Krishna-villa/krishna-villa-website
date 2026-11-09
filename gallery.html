@@ -65,53 +65,115 @@
       <p class="section-sub">Click any photo to enlarge.</p>
       <div class="rule"></div>
     </div>
+    <div class="gallery-filters" role="group" aria-label="Filter photos">
+      <button type="button" data-filter="all" class="active">All</button>
+      <button type="button" data-filter="standard">Standard AC Room</button>
+      <button type="button" data-filter="deluxe">Deluxe AC Room</button>
+      <button type="button" data-filter="villa">The Villa</button>
+    </div>
     <div class="gallery-grid">
-      <div class="g-item reveal" data-full="photos/room-lakeview-1.jpg" data-cap="Standard AC Room — clean and comfortable">
-        <img src="photos/room-lakeview-1.jpg" alt="Standard AC Room interior">
+      <div class="g-item reveal" data-group="standard" data-full="photos/standard-ac-room/standard-room-bed-mirror-window-wide.webp" data-cap="Standard AC Room — bed, dresser and window">
+        <img src="photos/standard-ac-room/standard-room-bed-mirror-window-wide.webp" alt="Standard AC Room — bed, dresser and window" loading="lazy">
         <span class="g-cap">Standard AC Room</span>
       </div>
-      <div class="g-item reveal" data-full="photos/room-lakeview-2.jpg" data-cap="Standard AC Room — a closer look">
-        <img src="photos/room-lakeview-2.jpg" alt="Standard AC Room details">
+      <div class="g-item reveal" data-group="standard" data-full="photos/standard-ac-room/standard-room-bed-desk-door-wide.webp" data-cap="Standard AC Room — bed and tea desk">
+        <img src="photos/standard-ac-room/standard-room-bed-desk-door-wide.webp" alt="Standard AC Room — bed and tea desk" loading="lazy">
         <span class="g-cap">Standard AC Room</span>
       </div>
-      <div class="g-item reveal" data-full="photos/room-heritage-1.jpg" data-cap="Deluxe AC Room — haveli-style interiors">
-        <img src="photos/room-heritage-1.jpg" alt="Deluxe AC Room lounge area">
+      <div class="g-item reveal" data-group="standard" data-full="photos/standard-ac-room/standard-room-bathroom-vanity.webp" data-cap="Standard AC Room — attached bathroom">
+        <img src="photos/standard-ac-room/standard-room-bathroom-vanity.webp" alt="Standard AC Room — attached bathroom" loading="lazy">
+        <span class="g-cap">Standard AC Room</span>
+      </div>
+      <div class="g-item reveal" data-group="standard" data-full="photos/standard-ac-room/standard-room-bathroom-shower.webp" data-cap="Standard AC Room — walk-in shower">
+        <img src="photos/standard-ac-room/standard-room-bathroom-shower.webp" alt="Standard AC Room — walk-in shower" loading="lazy">
+        <span class="g-cap">Standard AC Room</span>
+      </div>
+      <div class="g-item reveal" data-group="deluxe" data-full="photos/deluxe-ac-room/deluxe-room-wide-view-bay-window.webp" data-cap="Deluxe AC Room — bay-window lounge">
+        <img src="photos/deluxe-ac-room/deluxe-room-wide-view-bay-window.webp" alt="Deluxe AC Room — bay-window lounge" loading="lazy">
         <span class="g-cap">Deluxe AC Room</span>
       </div>
-      <div class="g-item reveal" data-full="photos/room-heritage-2.jpg" data-cap="Deluxe AC Room — handcrafted furniture">
-        <img src="photos/room-heritage-2.jpg" alt="Deluxe AC Room furniture">
+      <div class="g-item reveal" data-group="deluxe" data-full="photos/deluxe-ac-room/deluxe-room-bed-headboard-wardrobe.webp" data-cap="Deluxe AC Room — four-poster bed">
+        <img src="photos/deluxe-ac-room/deluxe-room-bed-headboard-wardrobe.webp" alt="Deluxe AC Room — four-poster bed" loading="lazy">
         <span class="g-cap">Deluxe AC Room</span>
       </div>
-      <div class="g-item reveal" data-full="photos/villa-terrace-wide.jpg" data-cap="Rooftop terrace with its domed chhatris">
-        <img src="photos/villa-terrace-wide.jpg" alt="Rooftop terrace at Krishna Villa">
-        <span class="g-cap">Rooftop Terrace</span>
+      <div class="g-item reveal" data-group="deluxe" data-full="photos/deluxe-ac-room/deluxe-room-bed-and-window-seat.webp" data-cap="Deluxe AC Room — bed and window seat">
+        <img src="photos/deluxe-ac-room/deluxe-room-bed-and-window-seat.webp" alt="Deluxe AC Room — bed and window seat" loading="lazy">
+        <span class="g-cap">Deluxe AC Room</span>
       </div>
-      <div class="g-item reveal" data-full="photos/villa-terrace-coffee.jpg" data-cap="Morning chai on the terrace">
-        <img src="photos/villa-terrace-coffee.jpg" alt="Chai table on the rooftop terrace">
-        <span class="g-cap">Terrace Chai</span>
+      <div class="g-item reveal" data-group="deluxe" data-full="photos/deluxe-ac-room/deluxe-room-bed-dresser-door.webp" data-cap="Deluxe AC Room — dresser and entrance">
+        <img src="photos/deluxe-ac-room/deluxe-room-bed-dresser-door.webp" alt="Deluxe AC Room — dresser and entrance" loading="lazy">
+        <span class="g-cap">Deluxe AC Room</span>
       </div>
-      <div class="g-item reveal" data-full="photos/villa-terrace-nook.jpg" data-cap="A quiet jharokha nook on the terrace">
-        <img src="photos/villa-terrace-nook.jpg" alt="Jharokha seating nook on the terrace">
-        <span class="g-cap">Terrace Nook</span>
+      <div class="g-item reveal" data-group="deluxe" data-full="photos/deluxe-ac-room/deluxe-room-window-city-view.webp" data-cap="Deluxe AC Room — arched window view">
+        <img src="photos/deluxe-ac-room/deluxe-room-window-city-view.webp" alt="Deluxe AC Room — arched window view" loading="lazy">
+        <span class="g-cap">Deluxe AC Room</span>
       </div>
-      <div class="g-item reveal" data-full="photos/bath-1.jpg" data-cap="Ensuite bathroom">
-        <img src="photos/bath-1.jpg" alt="Ensuite bathroom with vanity">
-        <span class="g-cap">Bathroom</span>
+      <div class="g-item reveal" data-group="deluxe" data-full="photos/deluxe-ac-room/deluxe-room-bathroom.webp" data-cap="Deluxe AC Room — marble bathroom">
+        <img src="photos/deluxe-ac-room/deluxe-room-bathroom.webp" alt="Deluxe AC Room — marble bathroom" loading="lazy">
+        <span class="g-cap">Deluxe AC Room</span>
       </div>
-      <div class="g-item reveal" data-full="photos/bath-2.jpg" data-cap="Ensuite bathroom">
-        <img src="photos/bath-2.jpg" alt="Ensuite bathroom vanity and mirror">
-        <span class="g-cap">Bathroom</span>
-      </div>
-      <div class="g-item reveal" data-full="photos/bath-3.jpg" data-cap="Ensuite bathroom">
-        <img src="photos/bath-3.jpg" alt="Ensuite walk-in shower">
-        <span class="g-cap">Bathroom</span>
-      </div>
-      <div class="g-item reveal" data-full="photos/villa-exterior.jpg" data-cap="The Krishna Villa facade">
-        <img src="photos/villa-exterior.jpg" alt="Krishna Villa building facade">
+      <div class="g-item reveal" data-group="villa" data-full="photos/property/building-facade-front.webp" data-cap="The Krishna Villa facade">
+        <img src="photos/property/building-facade-front.webp" alt="The Krishna Villa facade" loading="lazy">
         <span class="g-cap">The Villa</span>
       </div>
-      <div class="g-item reveal" data-full="photos/villa-nameplate.jpg" data-cap="Krishna Villa — 428, Teachers Colony, Ambamata">
-        <img src="photos/villa-nameplate.jpg" alt="Krishna Villa nameplate">
+      <div class="g-item reveal" data-group="villa" data-full="photos/villa-terrace-wide.webp" data-cap="Rooftop terrace with its domed chhatris">
+        <img src="photos/villa-terrace-wide.webp" alt="Rooftop terrace with its domed chhatris" loading="lazy">
+        <span class="g-cap">Rooftop Terrace</span>
+      </div>
+      <div class="g-item reveal" data-group="villa" data-full="photos/property/rooftop-terrace-gazebo.webp" data-cap="Rooftop gazebo at dusk">
+        <img src="photos/property/rooftop-terrace-gazebo.webp" alt="Rooftop gazebo at dusk" loading="lazy">
+        <span class="g-cap">Rooftop Terrace</span>
+      </div>
+      <div class="g-item reveal" data-group="villa" data-full="photos/property/terrace-jharokha-seating-closeup.webp" data-cap="Jharokha seating nook on the terrace">
+        <img src="photos/property/terrace-jharokha-seating-closeup.webp" alt="Jharokha seating nook on the terrace" loading="lazy">
+        <span class="g-cap">Terrace Nook</span>
+      </div>
+      <div class="g-item reveal" data-group="villa" data-full="photos/property/terrace-seating-elephant-print.webp" data-cap="Terrace seating with elephant-print cushions">
+        <img src="photos/property/terrace-seating-elephant-print.webp" alt="Terrace seating with elephant-print cushions" loading="lazy">
+        <span class="g-cap">Terrace Nook</span>
+      </div>
+      <div class="g-item reveal" data-group="villa" data-full="photos/villa-terrace-coffee.webp" data-cap="Morning chai on the terrace">
+        <img src="photos/villa-terrace-coffee.webp" alt="Morning chai on the terrace" loading="lazy">
+        <span class="g-cap">Terrace Chai</span>
+      </div>
+      <div class="g-item reveal" data-group="villa" data-full="photos/villa-terrace-nook.webp" data-cap="A quiet jharokha nook on the terrace">
+        <img src="photos/villa-terrace-nook.webp" alt="A quiet jharokha nook on the terrace" loading="lazy">
+        <span class="g-cap">Terrace Nook</span>
+      </div>
+      <div class="g-item reveal" data-group="villa" data-full="photos/property/reception-desk-and-staircase.webp" data-cap="Reception desk and peacock-railing staircase">
+        <img src="photos/property/reception-desk-and-staircase.webp" alt="Reception desk and peacock-railing staircase" loading="lazy">
+        <span class="g-cap">Reception</span>
+      </div>
+      <div class="g-item reveal" data-group="villa" data-full="photos/property/reception-blue-floral-mural.webp" data-cap="Hand-painted blue floral mural">
+        <img src="photos/property/reception-blue-floral-mural.webp" alt="Hand-painted blue floral mural" loading="lazy">
+        <span class="g-cap">Reception</span>
+      </div>
+      <div class="g-item reveal" data-group="villa" data-full="photos/property/lobby-elevator-and-seating.webp" data-cap="Lobby with elevator and seating">
+        <img src="photos/property/lobby-elevator-and-seating.webp" alt="Lobby with elevator and seating" loading="lazy">
+        <span class="g-cap">Lobby</span>
+      </div>
+      <div class="g-item reveal" data-group="villa" data-full="photos/property/lobby-sofa-and-lake-picture.webp" data-cap="Lobby sofa and Udaipur lake picture">
+        <img src="photos/property/lobby-sofa-and-lake-picture.webp" alt="Lobby sofa and Udaipur lake picture" loading="lazy">
+        <span class="g-cap">Lobby</span>
+      </div>
+      <div class="g-item reveal" data-group="villa" data-full="photos/property/lobby-daybed-lake-picture.webp" data-cap="Lobby daybed with lake view picture">
+        <img src="photos/property/lobby-daybed-lake-picture.webp" alt="Lobby daybed with lake view picture" loading="lazy">
+        <span class="g-cap">Lobby</span>
+      </div>
+      <div class="g-item reveal" data-group="villa" data-full="photos/property/lobby-daybed-yellow-cover.webp" data-cap="Lobby daybed and miniature paintings">
+        <img src="photos/property/lobby-daybed-yellow-cover.webp" alt="Lobby daybed and miniature paintings" loading="lazy">
+        <span class="g-cap">Lobby</span>
+      </div>
+      <div class="g-item reveal" data-group="villa" data-full="photos/property/lobby-sofa-and-entrance-door.webp" data-cap="Lobby sofa and carved entrance doors">
+        <img src="photos/property/lobby-sofa-and-entrance-door.webp" alt="Lobby sofa and carved entrance doors" loading="lazy">
+        <span class="g-cap">Lobby</span>
+      </div>
+      <div class="g-item reveal" data-group="villa" data-full="photos/villa-exterior.webp" data-cap="The Krishna Villa facade">
+        <img src="photos/villa-exterior.webp" alt="The Krishna Villa facade" loading="lazy">
+        <span class="g-cap">The Villa</span>
+      </div>
+      <div class="g-item reveal" data-group="villa" data-full="photos/villa-nameplate.webp" data-cap="Krishna Villa — 428, Teachers Colony, Ambamata">
+        <img src="photos/villa-nameplate.webp" alt="Krishna Villa — 428, Teachers Colony, Ambamata" loading="lazy">
         <span class="g-cap">Our Address</span>
       </div>
     </div>
