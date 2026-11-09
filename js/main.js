@@ -42,12 +42,18 @@
   var lightbox = document.querySelector(".lightbox");
   var lbImg = lightbox ? lightbox.querySelector("img") : null;
   var lbCap = lightbox ? lightbox.querySelector(".lb-caption") : null;
-  var items = Array.prototype.slice.call(document.querySelectorAll(".g-item[data-full], .g-item img[data-full]"));
+  var items = [];
   var current = 0;
 
-  function openLightbox(index) {
+  // Opens the viewer on `el`, navigating only the visible photos that share its
+  // data-lb group (e.g. one room's photos). Items without data-lb form one set.
+  function openLightbox(el) {
     if (!lightbox) return;
-    current = index;
+    var group = el.getAttribute("data-lb");
+    items = Array.prototype.slice.call(document.querySelectorAll(".g-item[data-full]")).filter(function (it) {
+      return it.getAttribute("data-lb") === group && it.offsetParent !== null;
+    });
+    current = Math.max(0, items.indexOf(el));
     updateLightbox();
     lightbox.classList.add("open");
     document.body.style.overflow = "hidden";
@@ -92,12 +98,35 @@
     });
   }
 
-  document.querySelectorAll(".g-item[data-full]").forEach(function (el, i) {
-    el.addEventListener("click", function () { openLightbox(i); });
+  document.querySelectorAll(".g-item[data-full]").forEach(function (el) {
+    el.addEventListener("click", function () { openLightbox(el); });
   });
-  document.querySelectorAll(".g-item img[data-full]").forEach(function (el, i) {
-    el.addEventListener("click", function () { openLightbox(i); });
-  });
+
+  /* ---------- Gallery filters (#standard, #deluxe, #villa deep links) ---------- */
+  var filterBtns = document.querySelectorAll(".gallery-filters [data-filter]");
+  function applyFilter(name) {
+    var valid = false;
+    filterBtns.forEach(function (b) {
+      var on = b.getAttribute("data-filter") === name;
+      if (on) valid = true;
+      b.classList.toggle("active", on);
+    });
+    if (!valid) name = "all";
+    document.querySelectorAll(".gallery-grid .g-item").forEach(function (el) {
+      el.style.display = (name === "all" || el.getAttribute("data-group") === name) ? "" : "none";
+    });
+    if (!valid) filterBtns.forEach(function (b) { b.classList.toggle("active", b.getAttribute("data-filter") === "all"); });
+  }
+  if (filterBtns.length) {
+    filterBtns.forEach(function (b) {
+      b.addEventListener("click", function () {
+        var f = b.getAttribute("data-filter");
+        applyFilter(f);
+        if (history.replaceState) history.replaceState(null, "", f === "all" ? location.pathname : "#" + f);
+      });
+    });
+    applyFilter(location.hash.replace("#", "") || "all");
+  }
 
   /* ---------- FAQ accordion ---------- */
   document.querySelectorAll(".faq-q").forEach(function (q) {

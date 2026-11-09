@@ -62,7 +62,14 @@
     <div class="room-list">
 
       <article class="room-item reveal" id="standard">
-        <div class="room-ph hero-bg" style="background-image:url('photos/room-lakeview-1.jpg');background-size:cover;background-position:center"></div>
+        <div class="room-ph room-gallery">
+          <div class="g-item room-main" data-lb="standard" data-full="photos/standard-ac-room/standard-room-bed-mirror-window-wide.webp" data-cap="Standard AC Room — bed, dresser and window"><img src="photos/standard-ac-room/standard-room-bed-mirror-window-wide.webp" alt="Standard AC Room — bed, dresser and window" loading="lazy"><span class="photo-count">4 photos</span></div>
+          <div class="room-thumbs">
+            <div class="g-item" data-lb="standard" data-full="photos/standard-ac-room/standard-room-bed-desk-door-wide.webp" data-cap="Standard AC Room — bed and tea desk"><img src="photos/standard-ac-room/standard-room-bed-desk-door-wide.webp" alt="Standard AC Room — bed and tea desk" loading="lazy"></div>
+            <div class="g-item" data-lb="standard" data-full="photos/standard-ac-room/standard-room-bathroom-vanity.webp" data-cap="Standard AC Room — attached bathroom"><img src="photos/standard-ac-room/standard-room-bathroom-vanity.webp" alt="Standard AC Room — attached bathroom" loading="lazy"></div>
+            <div class="g-item" data-lb="standard" data-full="photos/standard-ac-room/standard-room-bathroom-shower.webp" data-cap="Standard AC Room — walk-in shower"><img src="photos/standard-ac-room/standard-room-bathroom-shower.webp" alt="Standard AC Room — walk-in shower" loading="lazy"></div>
+          </div>
+        </div>
         <div class="room-info">
           <span class="tag">Comfort</span>
           <h2>Standard AC Room</h2>
@@ -74,13 +81,22 @@
           <div class="room-rate"><span class="amt">₹3,000</span><span class="per">starting · per night · taxes included</span></div>
           <div class="hero-actions" style="justify-content:flex-start">
             <a class="btn btn-wine" href="contact.html?room=Standard+AC+Room">Check Availability</a>
-            <a class="btn btn-outline" href="gallery.html">See Photos</a>
+            <a class="btn btn-outline" href="gallery.html#standard">See All Photos</a>
           </div>
         </div>
       </article>
 
       <article class="room-item reveal" id="deluxe">
-        <div class="room-ph hero-bg" style="background-image:url('photos/room-heritage-1.jpg');background-size:cover;background-position:center"></div>
+        <div class="room-ph room-gallery">
+          <div class="g-item room-main" data-lb="deluxe" data-full="photos/deluxe-ac-room/deluxe-room-wide-view-bay-window.webp" data-cap="Deluxe AC Room — bay-window lounge"><img src="photos/deluxe-ac-room/deluxe-room-wide-view-bay-window.webp" alt="Deluxe AC Room — bay-window lounge" loading="lazy"><span class="photo-count">6 photos</span></div>
+          <div class="room-thumbs">
+            <div class="g-item" data-lb="deluxe" data-full="photos/deluxe-ac-room/deluxe-room-bed-headboard-wardrobe.webp" data-cap="Deluxe AC Room — four-poster bed"><img src="photos/deluxe-ac-room/deluxe-room-bed-headboard-wardrobe.webp" alt="Deluxe AC Room — four-poster bed" loading="lazy"></div>
+            <div class="g-item" data-lb="deluxe" data-full="photos/deluxe-ac-room/deluxe-room-bed-and-window-seat.webp" data-cap="Deluxe AC Room — bed and window seat"><img src="photos/deluxe-ac-room/deluxe-room-bed-and-window-seat.webp" alt="Deluxe AC Room — bed and window seat" loading="lazy"></div>
+            <div class="g-item" data-lb="deluxe" data-full="photos/deluxe-ac-room/deluxe-room-bed-dresser-door.webp" data-cap="Deluxe AC Room — dresser and entrance"><img src="photos/deluxe-ac-room/deluxe-room-bed-dresser-door.webp" alt="Deluxe AC Room — dresser and entrance" loading="lazy"></div>
+            <div class="g-item" data-lb="deluxe" data-full="photos/deluxe-ac-room/deluxe-room-window-city-view.webp" data-cap="Deluxe AC Room — arched window view"><img src="photos/deluxe-ac-room/deluxe-room-window-city-view.webp" alt="Deluxe AC Room — arched window view" loading="lazy"></div>
+            <div class="g-item" data-lb="deluxe" data-full="photos/deluxe-ac-room/deluxe-room-bathroom.webp" data-cap="Deluxe AC Room — marble bathroom"><img src="photos/deluxe-ac-room/deluxe-room-bathroom.webp" alt="Deluxe AC Room — marble bathroom" loading="lazy"></div>
+          </div>
+        </div>
         <div class="room-info">
           <span class="tag">Premium</span>
           <h2>Deluxe AC Room</h2>
@@ -92,7 +108,7 @@
           <div class="room-rate"><span class="amt">₹4,000</span><span class="per">starting · per night · taxes included</span></div>
           <div class="hero-actions" style="justify-content:flex-start">
             <a class="btn btn-wine" href="contact.html?room=Deluxe+AC+Room">Check Availability</a>
-            <a class="btn btn-outline" href="gallery.html">See Photos</a>
+            <a class="btn btn-outline" href="gallery.html#deluxe">See All Photos</a>
           </div>
         </div>
       </article>
@@ -205,6 +221,17 @@
     <div class="footer-bottom">© <span id="year"></span> Krishna Villa, Udaipur. All rights reserved. · <a href="location.html">Find Us</a></div>
   </div>
 </footer>
+
+<!-- ======= LIGHTBOX ======= -->
+<div class="lightbox" role="dialog" aria-label="Image viewer">
+  <button class="lb-close" aria-label="Close">×</button>
+  <button class="lb-prev" aria-label="Previous">‹</button>
+  <div style="text-align:center">
+    <img src="" alt="">
+    <div class="lb-caption"></div>
+  </div>
+  <button class="lb-next" aria-label="Next">›</button>
+</div>
 
 <script src="js/main.js"></script>
 </body>
